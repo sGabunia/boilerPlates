@@ -1,0 +1,28 @@
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  @include media-min(1200) {
+    width: 1170px;
+  }
+  @include media-int(992, 1199) {
+    width: 970px;
+  }
+  @include media-int(768, 991) {
+    width: 750px;
+  }
+  @include media-max(767) {
+    width: 100%;
+  }
+}
+
+.fluid-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  @include media-min(2000) {
+    width: 1920px;
+  }
+  @include media-int(992, 1199) {
+    width: 100%;
+  }
+}
